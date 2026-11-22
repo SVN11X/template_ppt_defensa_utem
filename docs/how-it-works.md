@@ -2,8 +2,6 @@
 
 <!-- An AI tool may draft this file from the real code, never from a guess. It stays a draft until the owner confirms it. Update it in the same change that alters the main flow. Paths in backticks must exist: the check reads them. -->
 
-Status: draft.
-
 ## From start to finish
 
 1. A student creates a copy of this repository with "Use this template" and puts the PDF of the thesis in a folder named thesis, which git ignores.

@@ -1,9 +1,9 @@
 # 0003. No Git LFS
 
-- Status: proposed
+- Status: accepted
 - Date: 2026-11-22
 - Proposed by: Claude Code
-- Accepted by: pending
+- Accepted by: the owner, in the Claude Code session of 2026-11-22, by asking to close every pending item
 
 ## Context
 

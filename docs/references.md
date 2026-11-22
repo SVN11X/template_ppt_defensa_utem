@@ -27,7 +27,7 @@ Current files, July 2026:
 - Manual: https://www.utem.cl/wp-content/uploads/2026/07/MANUAL_UTEM_2026.pdf
 - Logo guides: [general](https://www.utem.cl/wp-content/uploads/2026/07/IG_UTEM_general.pdf), [compact](https://www.utem.cl/wp-content/uploads/2026/07/IG_UTEM_COMPACTO_2026.pdf), [vertical](https://www.utem.cl/wp-content/uploads/2026/07/IG_UTEM_VERTICAL_2026.pdf), [web](https://www.utem.cl/wp-content/uploads/2026/07/IG_UTEM_WEB_2026.pdf)
 
-`templates/brand-manual/` holds the 2025 versions (manual of July 2025 and logo guides of 5 September 2025). The 2026 manual keeps what the template uses: blue `#004EAA`, green `#78BF26`, and Calibri among the fonts recommended for Office documents.
+`templates/brand-manual/` holds these 2026 files with their original names. The four logo guides are the same files UTEM published in September 2025 under other names. The 2026 manual replaced the July 2025 one and keeps what the template uses: blue `#004EAA`, green `#78BF26`, and Calibri among the fonts recommended for Office documents.
 
 ## UTEM rules on the degree exam
 
