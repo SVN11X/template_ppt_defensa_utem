@@ -13,6 +13,11 @@ github:
   homepage: ''
   topics:
   - documentation
+  - utem
+  - thesis-defense
+  - powerpoint-template
+  - claude-code
+  - spanish
 options:
   format: markdown
   citation_style: apa
