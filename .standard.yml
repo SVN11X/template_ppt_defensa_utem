@@ -19,7 +19,9 @@ options:
   citation: none
 parts: {}
 part_options: {}
-extra_folders: {}
+extra_folders:
+  scripts: Python scripts that build the slide catalog and the presentation.
+  tests: Tests of the build script, run by CI.
 skills:
 - repo-improve
 - code-review

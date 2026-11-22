@@ -1,0 +1,227 @@
+# Contenido de tu defensa. El comando `python scripts/build_deck.py` lo convierte en build/defensa.pptx.
+# Todo lo que está entre [corchetes] es un espacio para completar. Nunca inventes cifras: si falta un dato, déjalo entre corchetes.
+# Modelos disponibles y sus campos: `python scripts/build_deck.py --models`.
+
+defensa:
+  titulo: "[Título de tu tesis, tal como aparece en la portada del documento]"
+  bajada: "[Una frase simple que diga qué hiciste]"
+  estudiante: "[Tu nombre completo]"
+  profesor_guia: "[Nombre de tu profesor guía]"
+  carrera: "[Tu carrera]"
+  titulo_profesional: "[Título profesional, por ejemplo Ingeniero Civil en ...]"
+  lugar_y_anio: "Santiago, Chile, [año]"
+  duracion_minutos: 20
+
+# Las cinco secciones de la defensa. "pestana" es el nombre corto que aparece arriba de cada lámina.
+secciones:
+  - pestana: Problema
+    nombre: Contexto y problema
+    detalle: "[Por qué importa el problema y cuál es la pregunta central]"
+  - pestana: Objetivos
+    nombre: Objetivos
+    detalle: "[Qué te propusiste lograr y hasta dónde llega el trabajo]"
+  - pestana: Metodología
+    nombre: Metodología
+    detalle: "[Cómo lo hiciste y por qué elegiste cada camino]"
+  - pestana: Resultados
+    nombre: Resultados
+    detalle: "[Qué mediste y qué tan bien funcionó]"
+  - pestana: Conclusiones
+    nombre: Conclusiones
+    detalle: "[Qué lograste, qué falta y qué sigue]"
+
+# Una entrada por lámina, en el orden en que se presentan.
+# "segundos" es el tiempo que hablarás en esa lámina. "guion" es lo que dirás, en frases cortas y simples.
+laminas:
+  - modelo: portada
+    segundos: 35
+    guion: "[Saludo a la comisión, tu nombre, el título del trabajo y tu profesor guía. Cierra con una frase simple que diga qué hiciste.]"
+
+  - modelo: agenda
+    segundos: 15
+    guion: "[Nombra las cinco partes de la presentación en una sola frase.]"
+
+  - modelo: separador
+    seccion: 1
+    segundos: 5
+    guion: "[Una frase para entrar al problema.]"
+
+  - modelo: problema
+    seccion: 1
+    titulo: "[Título con lectura: la idea central de la lámina, no solo el tema]"
+    pregunta: "[La pregunta central de tu tesis, copiada textual del documento]"
+    contraste:
+      - etiqueta: "[Lo que existe hoy]"
+        texto: "[Por qué no basta]"
+      - etiqueta: "[Lo que falta]"
+        texto: "[La brecha que aborda tu trabajo]"
+    cifras:
+      - valor: "[cifra]"
+        texto: "[Qué significa esa cifra]"
+      - valor: "[cifra]"
+        texto: "[Qué significa esa cifra]"
+    puntos:
+      - nombre: "[Parte 1]"
+        texto: "[Explicación en palabras simples]"
+      - nombre: "[Parte 2]"
+        texto: "[Explicación en palabras simples]"
+      - nombre: "[Parte 3]"
+        texto: "[Explicación en palabras simples]"
+    segundos: 75
+    guion: "[Cuenta el problema como si la comisión no fuera de tu especialidad. Explica cada término técnico en una frase.]"
+
+  - modelo: separador
+    seccion: 2
+    segundos: 5
+    guion: "[Una frase para pasar a los objetivos.]"
+
+  - modelo: objetivos
+    seccion: 2
+    titulo: "[Título con lectura, por ejemplo: Un objetivo general y tres específicos]"
+    bajada: "[Alcance: qué incluye y qué queda fuera]"
+    objetivo_general: "[Objetivo general, copiado textual de la tesis]"
+    especificos:
+      - nombre: "[Nombre corto]"
+        texto: "[Objetivo específico 1, textual]"
+      - nombre: "[Nombre corto]"
+        texto: "[Objetivo específico 2, textual]"
+      - nombre: "[Nombre corto]"
+        texto: "[Objetivo específico 3, textual]"
+    segundos: 70
+    guion: "[Lee el objetivo general tal como está en la tesis y explica los específicos con palabras simples.]"
+
+  - modelo: separador
+    seccion: 3
+    segundos: 5
+    guion: "[Una frase para pasar a la metodología.]"
+
+  - modelo: imagen
+    seccion: 3
+    titulo: "[Título con lectura sobre tu solución o tu método]"
+    imagen: "[ruta de la imagen, por ejemplo figures/diagrama.png]"
+    fuente: "Fuente: [figura o sección de la tesis]"
+    segundos: 60
+    guion: "[Recorre el diagrama de izquierda a derecha y di qué hace cada parte.]"
+
+  - modelo: tabla
+    seccion: 3
+    titulo: "[Título con lectura sobre tus decisiones]"
+    bajada: "[Qué resume la tabla]"
+    tabla:
+      columnas: ["Elección", "Frente a", "Por qué"]
+      filas:
+        - ["[Lo que elegiste]", "[Alternativas]", "[Razón en pocas palabras]"]
+        - ["[Lo que elegiste]", "[Alternativas]", "[Razón en pocas palabras]"]
+        - ["[Lo que elegiste]", "[Alternativas]", "[Razón en pocas palabras]"]
+    destacado:
+      titulo: "Aporte propio"
+      pasos: ["[Paso 1]", "[Paso 2]", "[Paso 3]"]
+    segundos: 80
+    guion: "[Justifica cada decisión. La comisión quiere saber por qué ese camino y no otro.]"
+
+  - modelo: separador
+    seccion: 4
+    segundos: 5
+    guion: "[Una frase para pasar a los resultados.]"
+
+  - modelo: cifras
+    seccion: 4
+    titulo: "[Título con lectura que diga el resultado principal]"
+    bajada: "[Dónde y cómo se midió]"
+    cifras:
+      - valor: "[cifra]"
+        texto: "[Qué mide]"
+        detalle: "[En qué condiciones]"
+      - valor: "[cifra]"
+        texto: "[Qué mide]"
+        detalle: "[En qué condiciones]"
+      - valor: "[cifra]"
+        texto: "[Qué mide]"
+        detalle: "[En qué condiciones]"
+    lectura: "[Qué significan estas cifras juntas, en una frase]"
+    fuente: "Fuente: [tablas de la tesis]"
+    segundos: 70
+    guion: "[Presenta cada cifra con su significado. No leas la lámina.]"
+
+  - modelo: grafico
+    seccion: 4
+    titulo: "[Título con lectura sobre lo que muestra el gráfico]"
+    bajada: "[Qué se compara]"
+    grafico:
+      categorias: ["[Caso 1]", "[Caso 2]", "[Caso 3]"]
+      serie: "[Nombre de la medida]"
+      valores: [0, 0, 0]
+      nota: "[Qué muestra el gráfico y en qué unidad. Reemplaza los valores 0 por tus datos]"
+    lectura:
+      - "[Lo primero que debe notar la comisión]"
+      - "[Lo segundo]"
+    segundos: 60
+    guion: "[Di qué muestra el eje, qué barra mirar y qué conclusión sacas.]"
+
+  - modelo: validacion
+    seccion: 4
+    titulo: "[Título con lectura sobre cómo se validó el trabajo]"
+    bajada: "[Qué significa validar en tu trabajo]"
+    tabla:
+      columnas: ["Parte", "Prueba", "Resultado", "Estado"]
+      filas:
+        - ["[Parte]", "[Cómo se probó]", "[Resultado]", "[Validado o comprobado]"]
+        - ["[Parte]", "[Cómo se probó]", "[Resultado]", "[Validado o comprobado]"]
+    notas:
+      - titulo: "[Una aclaración]"
+        texto: "[Explicación breve]"
+      - titulo: "En resumen"
+        texto: "[Una frase]"
+    fuente: "Fuente: [tabla de la tesis]"
+    segundos: 70
+    guion: "[Separa lo que mediste contra una referencia de lo que solo comprobaste que funciona.]"
+
+  - modelo: separador
+    seccion: 5
+    segundos: 5
+    guion: "[Una frase para pasar al cierre.]"
+
+  - modelo: conclusiones
+    seccion: 5
+    titulo: "[Título con lectura que responda la pregunta central]"
+    bajada: "[Cuántos objetivos se cumplieron y cuántos en parte]"
+    estado: ["✓ [Objetivo 1]", "◐ [Objetivo 2]", "✓ [Objetivo 3]"]
+    conclusion: "[Cómo los resultados responden el problema]"
+    aporte: "[Qué deja tu trabajo que antes no existía]"
+    limitaciones: "[Qué no alcanzaste y qué harías después]"
+    mensaje_final: "[Una frase que la comisión pueda recordar]"
+    segundos: 90
+    guion: "[Interpreta los resultados, no los repitas. Termina con el mensaje final.]"
+
+  - modelo: cierre
+    segundos: 15
+    guion: "[Agradece y abre las preguntas.]"
+
+  # Láminas de respaldo. Quedan ocultas y se muestran solo si la comisión pregunta.
+  - modelo: respaldo-alcance
+    titulo: "[Título con lectura sobre el alcance]"
+    bajada: "[Qué se evaluó]"
+    dentro:
+      titulo: "Evaluado en la tesis"
+      puntos: ["[Punto]", "[Punto]", "[Punto]"]
+    fuera:
+      titulo: "Fuera del alcance"
+      puntos: ["[Punto]", "[Punto]"]
+    nota: "[Por qué quedó fuera y cómo se podría evaluar]"
+    fuente: "Fuente: [sección de la tesis]"
+
+  - modelo: respaldo-tarjetas
+    titulo: "[Título con lectura]"
+    bajada: "[Contexto de las preguntas]"
+    tarjetas:
+      - etiqueta: "[Tema]"
+        pregunta: "[Pregunta probable de la comisión]"
+        valor: "[Dato]"
+        lectura: "[Qué significa]"
+        texto: "[Explicación breve]"
+      - etiqueta: "[Tema]"
+        pregunta: "[Pregunta probable de la comisión]"
+        valor: "[Dato]"
+        lectura: "[Qué significa]"
+        texto: "[Explicación breve]"
+    conclusion: "[La respuesta corta a todas estas preguntas]"

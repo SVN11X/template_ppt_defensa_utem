@@ -51,6 +51,8 @@ If the task contradicts the goals or a decision, treat it as red and say so.
 - `bibliography/`: References.
 - `templates/`: Institution or publisher templates.
 - `docs/`: goals, glossary, assumptions, decisions and specs.
+- `scripts/`: extra folder declared in .standard.yml. Python scripts that build the slide catalog and the presentation.
+- `tests/`: extra folder declared in .standard.yml. Tests of the build script, run by CI.
 - Files created by the official tool of a language or framework are allowed where the tool puts them. Declare any other top-level folder in .standard.yml under extra_folders, with a reason.
 
 ## Fixed rules
