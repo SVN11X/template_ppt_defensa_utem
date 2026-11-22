@@ -1,0 +1,28 @@
+# Identity of this repository for the standard.
+# After editing, run: python .standards/scripts/standard.py agents .
+standard: SVN11X/standards@v1
+owner: SVN11X
+name: template_ppt_defensa_utem
+profile: docs
+setup: done
+license: CC-BY-4.0
+content_language: es
+github:
+  description: Template to build a UTEM thesis defense presentation with Claude Code, from a catalog of slides based on a
+    real defense.
+  homepage: ''
+  topics:
+  - documentation
+options:
+  format: markdown
+  citation_style: apa
+  citation: none
+parts: {}
+part_options: {}
+extra_folders: {}
+skills:
+- repo-improve
+- code-review
+- tool-radar
+- docs-review
+- antislop-copywriting

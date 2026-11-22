@@ -1,0 +1,31 @@
+# standard
+.standards/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+*.aux
+*.out
+*.toc
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+_build/
+build/
+_site/
+.quarto/
+
+# project
+# Local reference material that must not be published (third-party videos, transcripts, old images).
+references/
+# The student's thesis stays on their computer. Claude Code reads it from here.
+thesis/
+# PowerPoint lock files.
+~$*
+# Personal Claude Code settings.
+.claude/settings.local.json
